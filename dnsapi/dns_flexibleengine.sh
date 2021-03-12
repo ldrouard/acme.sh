@@ -127,7 +127,7 @@ dns_flexibleengine_rm() {
   # Return "metadata":{"total_count":N} (Where N is the number of TXT records)
 
   # If not contains 'total_count":' == Request API Error
-  if ! echo "$response" | tr -d " " | grep \"total_count\": >/dev/null; then
+  if ! echo "$response" | tr -d " " | _egrep_o "\"total_count\":" ; then
     _err "Error: $response"
     return 1
   fi
@@ -154,7 +154,7 @@ dns_flexibleengine_rm() {
     _info "DNS TXT Records deleted."
     # We find this part '"status":"PENDING_DELETE"' in message
     #   If this status if found, we return Code 0 (Ok)
-    echo "$response" | tr -d " " | grep \"status\":\"PENDING_DELETE\" >/dev/null
+    echo "$response" | tr -d " " | _egrep_o "\"status\":\"PENDING_DELETE\""
   fi
 
 }
