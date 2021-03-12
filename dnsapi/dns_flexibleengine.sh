@@ -25,7 +25,7 @@
 FE_Api="https://dns.prod-cloud-ocb.orange-business.com/v2"
 
 
-########  Public functions below #####################
+########  Public functions below  #####################
 # Usage: add  _acme-challenge.www.domain.com   "XKrxpRBosdIKFzxW_CT3KLZNf6q0HG9i01zxXp5CPBs"
 # Used to add TXT record
 dns_flexibleengine_add() {
@@ -159,7 +159,7 @@ dns_flexibleengine_rm() {
 
 }
 
-####################  Private functions below ##################################
+####################  Private functions below  #################################
 #_acme-challenge.www.domain.com
 #returns
 # _sub_domain=_acme-challenge.www
