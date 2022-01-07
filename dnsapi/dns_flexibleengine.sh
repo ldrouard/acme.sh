@@ -7,6 +7,9 @@
 #   * Product : https://www.orange-business.com/en/products/flexible-engine
 #   * API : https://developer.orange.com/apis/flexible-engine/getting-started
 #   * Regions and Endpoints : https://docs.prod-cloud-ocb.orange-business.com/en-us/endpoint/index.html
+#
+# Derivated from DNS Challenge Cloudflare
+#   * https://github.com/acmesh-official/acme.sh/blob/master/dnsapi/dns_cf.sh
 
 
 # User Token from Flexible Engine
